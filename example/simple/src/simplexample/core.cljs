@@ -41,4 +41,4 @@
         foo-match (reitit/match-by-path router "/foo/5")]
     (rdom/render ($ app {:router router}) (js/document.getElementById "app"))
     (controllers/apply-controllers [] foo-match)
-    (controllers/apply-controllers (:controllers foo-match) (reitit/match-by-path router "/bar"))))
+    (controllers/apply-controllers (-> foo-match :data :controllers) (reitit/match-by-path router "/bar"))))

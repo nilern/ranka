@@ -1,0 +1,10 @@
+{:paths ["src" "../../src"]
+ :deps {org.clojure/clojurescript {:mvn/version "1.10.764"}
+        github-nilern/taksi {:git/url "https://github.com/nilern/taksi"
+                             :sha "42d04224a656f75dd104c6c1cb82f2c3ae32f1d5"}
+        metosin/reitit {:mvn/version "0.5.12"}
+        juxt/clip {:mvn/version "0.21.0"}
+
+        lilactown/helix {:mvn/version "0.0.13"}
+
+        thheller/shadow-cljs {:mvn/version "2.10.21"}}}
